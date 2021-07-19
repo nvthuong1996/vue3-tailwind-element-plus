@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+        "@/*": ["src/*"],
+        "@mobile/*": ["src/apps/mobile/*"],
+        "@web/*": ["src/apps/web/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "public"]
+}
