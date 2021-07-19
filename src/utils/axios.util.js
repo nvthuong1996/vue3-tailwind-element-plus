@@ -12,7 +12,7 @@ const axios = Axios.create({
 axios.interceptors.request.use(
   async function (config) {
     // eslint-disable-next-line no-debugger
-    const token = await getToken();
+    const token = getToken();
     config.headers["authorization"] = token;
     return config;
   },

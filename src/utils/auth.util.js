@@ -1,6 +1,7 @@
 import { store } from "@/store";
 import { authService } from "@/services/auth.service";
-import { CookieStorage as storage } from "cookie-storage";
+import { storage } from "@/utils/storage.util";
+
 // import { useRouter } from "vue-router";
 // const router = useRouter();
 
