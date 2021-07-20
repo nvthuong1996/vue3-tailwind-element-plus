@@ -1,8 +1,8 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "NODE_ENV_BUILD=\"${NODE_ENV:=development}\" && env-cmd --file ./.env.$NODE_ENV_BUILD vite",
-    "build": "export TAILWIND_MODE=build && NODE_ENV_BUILD=\"${NODE_ENV:=development}\" && env-cmd --file ./.env.$NODE_ENV_BUILD vite build",
+    "dev": "sh dev.sh",
+    "build": "sh build.sh",
     "serve": "vite preview"
   },
   "dependencies": {
