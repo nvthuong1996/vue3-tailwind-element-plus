@@ -38,4 +38,4 @@ Vì vậy khi dev vite build rất nhanh.
 
 file index.html là file khởi đầu của project từ đó sẽ import js vào và chạy
 
-Nhược điểm: Vì vite thực sự khi dev nó chả build project mà khi deploy mới dùng rollup để build nên thực sự môi trường dev và môi trường production không giống nhau. Nên là phải test production trước khi deploy.  - Đây là mình suy diễn chứ thực tế chưa bị lỗi này
+Nhược điểm: Vì vite thực sự khi dev nó chả build project mà khi deploy mới dùng esbuild để build nên thực sự môi trường dev và môi trường production không giống nhau. Nên là phải test production trước khi deploy.  - Đây là mình suy diễn chứ thực tế chưa bị lỗi này
