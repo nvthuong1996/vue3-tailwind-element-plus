@@ -9,12 +9,15 @@ COPY . .
 
 ARG NODE_ENV
 
+RUN echo $NODE_ENV
+
 RUN npm run build
 
 # production stage
 FROM nginx:stable-alpine as production-stage
 ENV TZ 'Asia/Ho_Chi_Minh'
 
+COPY nginx.conf /etc/nginx/
 
 COPY --from=build /app/dist /app
 

@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "sh dev.sh",
     "build": "sh build.sh",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "build:image": "docker build -t vue3-template:latest --build-arg NODE_ENV=$NODE_ENV ."
   },
   "dependencies": {
     "axios": "^0.21.1",
