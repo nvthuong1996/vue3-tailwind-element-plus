@@ -11,6 +11,7 @@ npm run build // build project
 # Câu trúc
 
 views: page
+
 assets: assets
 
 # Authenticate
